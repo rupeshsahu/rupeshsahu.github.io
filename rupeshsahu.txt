@@ -1,0 +1,17 @@
+<span id="a">system@root</span>:<span id="b"></span><span id="c">$</span> cd RupeshSahu/about
+<span id="a">system@RupeshSahu/about</span>:<span id="b">~</span><span id="c">$</span> cat rupeshsahu.txt<br/>
+
+Hey There!
+<p>Meet Rupesh Sahu, a skilled software engineer with expertise in Java, C++, and SQL. Rupesh has worked extensively with data structures and algorithms and has experience with several frameworks such as Spring Boot, Micro-services, and Hibernate/JPA. He has worked with several databases, including MySQL, Oracle, and HDFS.
+
+Rupesh has also worked with several tools such as Informatica ETL Tool, AWS (EMR, EC2), Docker, and Jenkins. He is familiar with different platforms such as RHEL, Suse, Windows, and AIX. Rupesh has experience working on several projects such as ABCT Automation Script, Storage Alert System, Jenkins Pipelines for Run SWTBot Automation, and RoboLive.
+
+Currently working as a Software Engineer at Informatica Pvt. Ltd. in Bangalore, India, Rupesh is involved in the development and testing of Informatica Developer client (Thick-Client). He has worked on fixing P0 and P1 level issues of back-end and front-end issues. Rupesh has also enhanced the tag feature of the ETL tool, which aims to expand more on the existing tag feature in Developer Tool by adding an enhanced UI dialog view of tags and allowing the tagging of objects other than mappings.
+
+Rupesh started his career as an Associate Consultant at Informatica (Bristlecone), where he focused on the development of the Informatica Developer Client. During his time there, he also worked on the SWTbot framework, which is used for testing the ETL tool through UI automation.
+
+Rupesh holds a Bachelor of Engineering with Information Technology from Indira Gandhi Engineering College in Sagar, India. He is a quick learner and has a passion for staying updated with the latest technologies and tools. In his free time, Rupesh enjoys exploring new technologies and contributing to open-source projects. 
+<p>Do checkout my work <a href="https://github.com/rupeshsahu/" target="_blank">here</a>.</p>
+To reach out mail at <a href="mailto:rupeshsahu7509@gmail.com" target="_blank">rupeshsahu7509@gmail.com</a> or call at <a target="_blank">+91 7509769044</a>.
+Connect at <a href="https://www.linkedin.com/in/rupeshsahu7509/" target="_blank">LinkedIn</a>
+<p>Cheers!</p>
