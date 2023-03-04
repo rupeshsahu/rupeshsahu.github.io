@@ -6,6 +6,7 @@ Hey There!
 
 Rupesh has also worked with several tools such as Informatica ETL Tool, AWS (EMR, EC2), Docker, and Jenkins. He is familiar with different platforms such as RHEL, Suse, Windows, and AIX. Rupesh has experience working on several projects such as ABCT Automation Script, Storage Alert System, Jenkins Pipelines for Run SWTBot Automation, and RoboLive.
 
+
 Currently working as a Software Engineer at Informatica Pvt. Ltd. in Bangalore, India, Rupesh is involved in the development and testing of Informatica Developer client (Thick-Client). He has worked on fixing P0 and P1 level issues of back-end and front-end issues. Rupesh has also enhanced the tag feature of the ETL tool, which aims to expand more on the existing tag feature in Developer Tool by adding an enhanced UI dialog view of tags and allowing the tagging of objects other than mappings.
 
 Rupesh started his career as an Associate Consultant at Informatica (Bristlecone), where he focused on the development of the Informatica Developer Client. During his time there, he also worked on the SWTbot framework, which is used for testing the ETL tool through UI automation.
