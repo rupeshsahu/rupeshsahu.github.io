@@ -12,6 +12,8 @@ Currently working as a Software Engineer at Informatica Pvt. Ltd. in Bangalore, 
 Rupesh started his career as an Associate Consultant at Informatica (Bristlecone), where he focused on the development of the Informatica Developer Client. During his time there, he also worked on the SWTbot framework, which is used for testing the ETL tool through UI automation.
 
 Rupesh holds a Bachelor of Engineering with Information Technology from Indira Gandhi Engineering College in Sagar, India. He is a quick learner and has a passion for staying updated with the latest technologies and tools. In his free time, Rupesh enjoys exploring new technologies and contributing to open-source projects. 
+
+</p>
 <p>Do checkout my work <a href="https://github.com/rupeshsahu/" target="_blank">here</a>.</p>
 To reach out mail at <a href="mailto:rupeshsahu7509@gmail.com" target="_blank">rupeshsahu7509@gmail.com</a> or call at <a target="_blank">+91 7509769044</a>.
 Connect at <a href="https://www.linkedin.com/in/rupeshsahu7509/" target="_blank">LinkedIn</a>
