@@ -2,15 +2,50 @@
 <span id="a">system@RupeshSahu/about</span>:<span id="b">~</span><span id="c">$</span> cat rupeshsahu.txt<br/>
 
 Hey There!
-<p>Meet Rupesh Sahu, a skilled software engineer with expertise in Java, C++, and SQL. Rupesh has extensive experience working with data structures and algorithms, as well as with several frameworks such as Spring Boot, Micro-services, and Hibernate/JPA. He has worked with databases such as MySQL, Oracle, and HDFS, and has also worked with tools like Informatica ETL Tool, AWS (EMR, EC2), Docker, and Jenkins. He is familiar with various platforms such as RHEL, Suse, Windows, and AIX.
+<p>
+Rupesh Sahu
+Software Engineer | ETL Developer | Informatica Specialist
 
-Rupesh has worked on several projects, including ABCT Automation Script, Storage Alert System, Jenkins Pipelines for Run SWTBot Automation, and RoboLive. The RoboLive project aimed to develop an Internet-controlled car equipped with a camera that provided live video feedback for remote driving.
 
-Currently working as a Software Engineer at Informatica Pvt. Ltd. in Bangalore, India, Rupesh is involved in the development and testing of Informatica Developer Client (Thick-Client). He has experience fixing P0 and P1 level issues of both back-end and front-end issues. Rupesh has also enhanced the tag feature of the ETL tool, adding an enhanced UI dialog view of tags and allowing the tagging of objects other than mappings.
+Summary:
+Results-oriented Software Engineer with 5+ years of experience in design, development, and maintenance of Informatica ETL applications. Skilled in dynamic mapping generation, UI enhancement, and schema implementation for flat files. Proficient in Java, C++, and SQL, with expertise in Informatica ETL Tool and various frameworks including Spring Boot and Hibernate. Experienced in working with databases such as MySQL, Oracle, and HBase. Strong knowledge of Data Structures & Algorithms. Familiar with AWS, Docker, Jenkins, and Linux/Windows platforms.
 
-Rupesh began his career as an Associate Consultant at Informatica (Bristlecone), focusing on the development of the Informatica Developer Client. During his time there, he also worked on the SWTbot framework, which is used for testing the ETL tool through UI automation.
+Work Experience:
+Software Engineer | Informatica Pvt. Ltd. | Bangalore, India | Nov 2019 - Present
 
-Rupesh holds a Bachelor of Engineering with Information Technology from Indira Gandhi Engineering College in Sagar, India. He is a quick learner and is passionate about staying up to date with the latest technologies and tools. In his free time, Rupesh enjoys exploring new technologies and contributing to open-source projects.
+Developed and implemented a cutting-edge project on dynamic mapping generation, allowing real-time customization and parameterization of source/target connections.
+Enhanced the tag feature of the ETL tool, improving functionality and expanding capabilities for object tagging.
+Implemented dynamic schema for flat files, enabling users to provide schemas at runtime.
+Expertise in automating routine tasks using scripts.
+Tech Stack: Java, Eclipse RCP, JUnit, Jenkins, JIRA, Spring Boot.
+Associate Consultant | Informatica Pvt. Ltd. (Bristlecone) | Bangalore, India | Jan 2018 - Nov 2019
+
+Proactively identified and addressed vulnerabilities in software applications caused by third-party libraries, ensuring enhanced security and stability.
+Prepared design documents and collaborated with cross-functional teams.
+Tech Stack: Java, JUnit, Apache POI, SWTBot, Eclipse, Jenkins, JIRA.
+
+Projects:
+ETL WEB APPLICATION
+
+Developed an ETL application using Spring Boot and Spring Data JPA, extracting data from CSV files, transforming it, and loading it into a MySQL database.
+GLOBALIZATION OF ETL TOOL
+
+Enabled support for Simplified Chinese, Korean, and Turkish languages in Informatica Developer Client, ensuring a seamless user experience.
+ENHANCEMENT OF MAPPING GENERATION FUNCTIONALITY
+
+Improved mapping generation capabilities in Informatica, enhancing transformations like Normalizer, SQL, Java, and Data Masking.
+Education:
+Bachelor of Engineering in Information Technology
+Indira Gandhi Engineering College | Sagar, India | 2013-2017
+
+Skills:
+
+Primary: Data Structures & Algorithms, Java, C++, SQL
+Frameworks: Spring Boot, Microservices, Hibernate/JPA, REST, JUnit, TestNG, SWTBot, Hadoop Framework
+Databases: MySQL, Oracle, HBase, HDFS
+Other Tools: Informatica ETL Tool, AWS, Docker, Jenkins
+Platforms: Linux, Windows
+Note: This is a sample job profile summary based on the provided information. You can customize it as per your specific requirements and experiences.
 </p>
 <p>Do checkout my work <a href="https://github.com/rupeshsahu/" target="_blank">here</a>.</p>
 Connect at <a href="https://www.linkedin.com/in/rupeshsahu7509/" target="_blank">LinkedIn</a>
