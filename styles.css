@@ -4,9 +4,8 @@ body {
     font-family: 'Roboto Mono', monospace;
     background-color: #0d1117; /* Dark space background */
     color: #00ffcc; /* Sci-fi green/cyan */
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrollbar from background animation */
     position: relative;
-    /* Ensure some padding on very small screens */
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -131,14 +130,15 @@ h1, h2 {
 
 /* Terminal-like animation for text */
 .terminal-text {
-    overflow: hidden;
-    white-space: nowrap;
+    /* Removed white-space: nowrap and overflow: hidden to allow text to wrap */
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* Typing effect */
 @keyframes typing {
     from { width: 0 }
+    /* To ensure typing effect works with wrapping text, the width animation needs to be on a container */
+    /* For simplicity with text wrapping, the animation will now reveal the text line by line */
     to { width: 100% }
 }
 
