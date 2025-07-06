@@ -6,8 +6,7 @@ body {
     color: #00ffcc; /* Sci-fi green/cyan */
     overflow-x: hidden; /* Prevent horizontal scrollbar from background animation */
     position: relative;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* Removed fixed padding here, now handled by .container in HTML using Tailwind classes */
 }
 
 /* Background grid/stars effect */
@@ -35,7 +34,7 @@ body::before {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem; /* Consistent padding for larger screens */
+    /* Removed padding here, now handled by Tailwind classes in HTML (px-4 sm:px-6 lg:px-8) */
 }
 
 .header-section {
@@ -130,15 +129,12 @@ h1, h2 {
 
 /* Terminal-like animation for text */
 .terminal-text {
-    /* Removed white-space: nowrap and overflow: hidden to allow text to wrap */
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* Typing effect */
 @keyframes typing {
     from { width: 0 }
-    /* To ensure typing effect works with wrapping text, the width animation needs to be on a container */
-    /* For simplicity with text wrapping, the animation will now reveal the text line by line */
     to { width: 100% }
 }
 
