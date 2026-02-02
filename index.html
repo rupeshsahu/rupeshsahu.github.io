@@ -1,111 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <title>Rupesh Sahu | Senior SDET</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rupesh Sahu | Senior SDET & Automation Lead</title>
+  <meta name="description" content="Portfolio of Rupesh Sahu - Senior SDET & Automation Lead with 8 years of experience architecting scalable test solutions.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(to right, #2563eb, #0f172a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-<body>
-
-<!-- ===== HEADER ===== -->
-<header class="hero">
-  <div class="hero-content">
-    <img src="assets/images/profile.png" alt="Rupesh Sahu" class="profile-pic" />
-    <h1>Rupesh Sahu</h1>
-    <h2>Senior Software Development Engineer in Test</h2>
-    <p>
-      8+ years of experience designing scalable automation frameworks,
-      CI/CD quality gates, and AI-driven testing solutions.
-    </p>
-    <div class="links">
-      <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-      <a href="mailto:rupeshsahu7509@gmail.com">Email</a>
+<nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      <div class="flex-shrink-0 flex items-center">
+        <span class="font-bold text-xl text-slate-900 tracking-tight">Rupesh Sahu</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition">About</a>
+        <a href="#experience" class="text-slate-600 hover:text-blue-600 font-medium transition">Experience</a>
+        <a href="#skills" class="text-slate-600 hover:text-blue-600 font-medium transition">Skills</a>
+        <a href="#contact" class="px-4 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition">Contact Me</a>
+      </div>
     </div>
   </div>
-</header>
+</nav>
 
-<!-- ===== SUMMARY ===== -->
-<section class="section">
-  <h3>Professional Summary</h3>
-  <p>
-    Senior SDET & Automation Lead with strong expertise in Java, Selenium,
-    REST Assured, Playwright, and DevOps ecosystems. Proven record of
-    building automation frameworks from scratch, mentoring teams,
-    and integrating intelligent automation into CI/CD pipelines.
-  </p>
-</section>
-
-<!-- ===== SKILLS ===== -->
-<section class="section gray">
-  <h3>Technical Skills</h3>
-  <div class="skills-grid">
-    <div><strong>Automation</strong><br/>Selenium, REST Assured, TestNG, Playwright</div>
-    <div><strong>Languages</strong><br/>Java, Python, SQL, Shell</div>
-    <div><strong>DevOps</strong><br/>Jenkins, Docker, Kubernetes, AWS, Terraform</div>
-    <div><strong>Tools</strong><br/>Git, JIRA, Maven, Postman, Linux</div>
+<section class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+      Senior SDET & <br class="hidden md:block" />
+      <span class="text-blue-600">Automation Architect</span>
+    </h1>
+    <p class="mt-4 text-xl text-slate-600 max-w-3xl mx-auto mb-10">
+      8+ years of experience designing hybrid frameworks, leading QA strategies, and integrating AI-driven automation into CI/CD pipelines.
+    </p>
+    <div class="flex justify-center gap-4">
+      <a href="#experience" class="rounded-full bg-slate-900 text-white px-8 py-3 font-semibold hover:bg-slate-700 transition shadow-lg">
+        View Experience
+      </a>
+      <a href="mailto:rupeshsahu7509@gmail.com" class="rounded-full bg-white text-slate-900 border border-slate-200 px-8 py-3 font-semibold hover:bg-slate-50 transition">
+        Get in Touch
+      </a>
+    </div>
   </div>
 </section>
 
-<!-- ===== EXPERIENCE ===== -->
-<section class="section">
-  <h3>Work Experience</h3>
-
-  <div class="experience">
-    <h4>Senior SDET – OpenText</h4>
-    <span>Sep 2023 – Present | Bengaluru</span>
-    <ul>
-      <li>Architected scalable Selenium + REST Assured automation frameworks.</li>
-      <li>Integrated AI (ChatGPT/Gemini) for test data generation & log analysis.</li>
-      <li>Designed Kubernetes-based containerized test environments.</li>
-      <li>Implemented CI/CD quality gates in Jenkins.</li>
-      <li>Reduced automation maintenance effort by 40%.</li>
-    </ul>
-  </div>
-
-  <div class="experience">
-    <h4>SDET / QA Lead – Informatica</h4>
-    <span>Jan 2018 – Sep 2023 | Bengaluru</span>
-    <ul>
-      <li>Led automation adoption and mentored junior engineers.</li>
-      <li>Owned end-to-end quality for ETL products.</li>
-      <li>Built custom Java automation utilities integrated with Jenkins.</li>
-      <li>Managed Linux-based test environments and regression suites.</li>
-    </ul>
+<section id="about" class="py-20 bg-slate-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Professional Summary</h2>
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 leading-relaxed text-lg text-slate-700">
+      <p class="mb-4">
+        I am a <strong>Senior SDET & Automation Lead</strong> with 8 years of experience architecting scalable test automation solutions for enterprise-grade cloud and on-premise applications. My expertise lies in designing hybrid frameworks from scratch using <strong>Java, Selenium, Playwright, and REST Assured</strong>.
+      </p>
+      <p>
+        I have a proven track record of leading QA strategies, mentoring teams, and bridging the gap between development and QA through robust <strong>DevOps implementations</strong> (Kubernetes, Docker, Jenkins). Recently, I have focused on integrating <strong>Generative AI</strong> (ChatGPT/Gemini) to revolutionize test data generation and log analysis.
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- ===== PHOTO GALLERY ===== -->
-<section class="section gray">
-  <h3>Professional Gallery</h3>
-  <p class="subtext">
+<section id="experience" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Work Experience</h2>
 
-  </p>
+    <div class="relative border-l-4 border-blue-100 ml-4 md:ml-0 space-y-12">
 
-  <div class="gallery">
-    <img src="assets/images/gallery1.jpg" alt="Automation Framework Architecture">
-    <img src="assets/images/gallery2.jpg" alt="CI/CD Dashboard">
-    <img src="assets/images/gallery3.jpg" alt="Tech Conference / Team">
+      <div class="relative pl-8 md:pl-12 group">
+        <div class="absolute -left-3 top-2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-sm"></div>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+          <h3 class="text-2xl font-bold text-slate-900">OpenText</h3>
+          <span class="text-blue-600 font-semibold bg-blue-50 px-3 py-1 rounded-full text-sm">Sept 2023 – Present</span>
+        </div>
+        <p class="text-lg text-slate-600 font-medium mb-4">Senior SDET | Bengaluru</p>
+        <ul class="space-y-3 text-slate-700 list-disc ml-5">
+          <li><strong>Automation Strategy:</strong> Spearheaded backend automation roadmap for WCM application, ensuring 100% coverage across cloud/on-premise.</li>
+          <li><strong>Framework Architecture:</strong> Architected a modular Selenium & REST Assured framework with <strong>Self-Healing</strong> capabilities, reducing maintenance by 40%.</li>
+          <li><strong>Modern UI Strategy:</strong> Introduced <strong>Playwright</strong> for dynamic web apps, leveraging auto-waiting to reduce flakiness by 30%.</li>
+          <li><strong>Cost Optimization:</strong> Designed ephemeral test environments using <strong>AWS Spot Instances</strong> & Terraform, cutting infrastructure costs by 30%.</li>
+          <li><strong>AI-Driven Testing:</strong> Integrated ChatGPT/Gemini APIs to automate complex test data generation.</li>
+          <li><strong>DevOps:</strong> Orchestrated containerized tests using <strong>Kubernetes</strong> and designed "Quality Gates" in Jenkins pipelines.</li>
+        </ul>
+      </div>
+
+      <div class="relative pl-8 md:pl-12 group">
+        <div class="absolute -left-3 top-2 w-6 h-6 bg-slate-300 rounded-full border-4 border-white shadow-sm"></div>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+          <h3 class="text-2xl font-bold text-slate-900">Informatica</h3>
+          <span class="text-slate-500 font-semibold bg-slate-100 px-3 py-1 rounded-full text-sm">Jan 2018 – Sept 2023</span>
+        </div>
+        <p class="text-lg text-slate-600 font-medium mb-4">SDET (Evolved into QA Lead Role) | Bengaluru</p>
+        <ul class="space-y-3 text-slate-700 list-disc ml-5">
+          <li><strong>Product Ownership:</strong> Served as QA Lead for the primary ETL tool, signing off on critical production releases.</li>
+          <li><strong>Tool Development:</strong> Engineered the "ABCT Automation Utility" (Java/Jenkins), saving <strong>20 engineer-hours per sprint</strong>.</li>
+          <li><strong>Mentorship:</strong> Led workshops for 5+ junior engineers, resulting in a 50% increase in automated coverage.</li>
+          <li><strong>Infrastructure:</strong> Managed Linux/Unix environments and scaled massive regression suites with intelligent test selection.</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 </section>
 
-<!-- ===== EDUCATION ===== -->
-<section class="section">
-  <h3>Education</h3>
-  <p>
-    <strong>Bachelor of Engineering – Computer Science</strong><br/>
-    Govt. Indira Gandhi Engineering College (2013 – 2017)
-  </p>
+<section id="skills" class="py-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Technical Competencies</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-3">Automation</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Selenium</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Playwright</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">REST Assured</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Cucumber BDD</span>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-3">Languages</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Java (Expert)</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Python</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">SQL</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Shell</span>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+          <i class="fa-solid fa-cloud"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-3">DevOps & Cloud</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Jenkins</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Kubernetes</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Docker</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">AWS</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Terraform</span>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-3">Tools</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">JIRA</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Git</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Maven/Gradle</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Postman</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <p>© 2026 Rupesh Sahu | Senior SDET Portfolio</p>
-</footer>
+<section id="contact" class="bg-slate-900 text-white py-16">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+    <p class="text-slate-400 mb-8 text-lg">
+      I am currently based in Bengaluru and open to discussing Senior SDET, Lead, or Architect roles.
+    </p>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+      <a href="mailto:rupeshsahu7509@gmail.com" class="flex items-center gap-2 text-white hover:text-blue-400 transition text-lg">
+        <i class="fa-solid fa-envelope"></i> rupeshsahu7509@gmail.com
+      </a>
+      <a href="tel:+917509769044" class="flex items-center gap-2 text-white hover:text-blue-400 transition text-lg">
+        <i class="fa-solid fa-phone"></i> +91-7509769044
+      </a>
+    </div>
+
+    <div class="mt-12 flex justify-center gap-6">
+      <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <div class="mt-12 border-t border-slate-800 pt-8 text-slate-500 text-sm">
+      &copy; 2024 Rupesh Sahu. All rights reserved.
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
-
