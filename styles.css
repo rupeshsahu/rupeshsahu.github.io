@@ -1,163 +1,94 @@
-/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #0d1117; /* Dark space background */
-    color: #00ffcc; /* Sci-fi green/cyan */
-    overflow-x: hidden; /* Prevent horizontal scrollbar from background animation */
-    position: relative;
-    /* Removed fixed padding here, now handled by .container in HTML using Tailwind classes */
+  color: #1f2937;
+  background: #ffffff;
 }
 
-/* Background grid/stars effect */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, #0a0e14 1px, transparent 1px),
-                radial-gradient(circle, #0a0e14 1px, transparent 1px);
-    background-size: 40px 40px;
-    background-position: 0 0, 20px 20px;
-    opacity: 0.2;
-    z-index: -1;
-    animation: moveGrid 60s linear infinite;
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-@keyframes moveGrid {
-    from { background-position: 0 0, 20px 20px; }
-    to { background-position: 4000px 4000px, 4020px 4020px; }
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  margin-bottom: 20px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    /* Removed padding here, now handled by Tailwind classes in HTML (px-4 sm:px-6 lg:px-8) */
+.hero h1 {
+  font-size: 2.5rem;
 }
 
-.header-section {
-    background: rgba(17, 24, 39, 0.8); /* Darker transparent background */
-    border: 1px solid #00ffcc;
-    box-shadow: 0 0 15px #00ffcc;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    animation: glowBorder 2s infinite alternate;
+.hero h2 {
+  font-weight: 400;
+  margin: 10px 0;
 }
 
-@keyframes glowBorder {
-    from { box-shadow: 0 0 5px #00ffcc; }
-    to { box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc; }
+.links a {
+  color: #38bdf8;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-h1, h2 {
-    font-family: 'Orbitron', sans-serif;
-    color: #00ffcc;
-    text-shadow: 0 0 8px #00ffcc;
+.section {
+  padding: 60px 15%;
 }
 
-.section-title {
-    position: relative;
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
+.section.gray {
+  background: #f8fafc;
 }
 
-.section-title::before {
-    content: '>>';
-    position: absolute;
-    left: 0;
-    color: #00ffcc;
-    font-size: 1.25rem;
-    animation: blink 1s infinite;
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-.card {
-    background: rgba(17, 24, 39, 0.7);
-    border: 1px solid #00ffcc;
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.experience {
+  margin-bottom: 30px;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px #00ffcc;
+.experience ul {
+  margin-top: 10px;
+  padding-left: 20px;
 }
 
-.skill-chip {
-    background-color: rgba(0, 255, 204, 0.2);
-    border: 1px solid #00ffcc;
-    color: #00ffcc;
-    padding: 0.3rem 0.7rem;
-    border-radius: 9999px;
-    font-size: 0.85rem;
-    white-space: nowrap;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
 }
 
-.project-item {
-    border-left: 3px solid #00ffcc;
-    padding-left: 1rem;
-    position: relative;
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
 
-.project-item::before {
-    content: '';
-    position: absolute;
-    left: -8px;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    background-color: #00ffcc;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #00ffcc;
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
-.contact-link {
-    color: #00ffcc;
-    transition: color 0.3s ease-in-out;
-}
-
-.contact-link:hover {
-    color: #66ffcc;
-    text-shadow: 0 0 10px #66ffcc;
-}
-
-/* Terminal-like animation for text */
-.terminal-text {
-    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* Typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* Blinking cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #00ffcc; }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #1a202c;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #00ffcc;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #66ffcc;
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0f172a;
+  color: #cbd5f5;
 }
