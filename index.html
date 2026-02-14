@@ -1,1174 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rupesh Sahu - Senior SDET Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rupesh Sahu | Senior SDET & Automation Lead</title>
+  <meta name="description" content="Portfolio of Rupesh Sahu - Senior SDET & Automation Lead with 8 years of experience architecting scalable test solutions.">
 
-        * {
-            font-family: 'Inter', sans-serif;
-        }
+  <script src="https://cdn.tailwindcss.com"></script>
 
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        .card-hover {
-            transition: all 0.3s ease;
-        }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        }
-
-        .skill-bar {
-            transition: width 1s ease-in-out;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -8px;
-            top: 0;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background: #667eea;
-            border: 3px solid white;
-            box-shadow: 0 0 0 3px #667eea;
-        }
-
-        .nav-link {
-            position: relative;
-            transition: color 0.3s ease;
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #667eea;
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .project-tag {
-            display: inline-block;
-            padding: 4px 12px;
-            background: #f3f4f6;
-            border-radius: 12px;
-            font-size: 12px;
-            margin: 4px;
-        }
-
-        .github-activity {
-            display: grid;
-            grid-template-columns: repeat(53, 1fr);
-            gap: 3px;
-        }
-
-        .activity-cell {
-            width: 10px;
-            height: 10px;
-            border-radius: 2px;
-            background: #ebedf0;
-        }
-
-        .activity-cell.level-1 { background: #9be9a8; }
-        .activity-cell.level-2 { background: #40c463; }
-        .activity-cell.level-3 { background: #30a14e; }
-        .activity-cell.level-4 { background: #216e39; }
-
-        .cert-badge {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cert-badge::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-            transform: rotate(45deg);
-            transition: all 0.5s;
-        }
-
-        .cert-badge:hover::before {
-            left: 100%;
-        }
-    </style>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(to right, #2563eb, #0f172a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
-<body class="bg-gray-50">
-<!-- Navigation -->
-<nav class="bg-white shadow-md fixed w-full top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16">
-            <div class="flex items-center">
-                    <span class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                        RS
-                    </span>
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#home" class="nav-link text-gray-700 hover:text-purple-600 font-medium">Home</a>
-                <a href="#about" class="nav-link text-gray-700 hover:text-purple-600 font-medium">About</a>
-                <a href="#skills" class="nav-link text-gray-700 hover:text-purple-600 font-medium">Skills</a>
-                <a href="#projects" class="nav-link text-gray-700 hover:text-purple-600 font-medium">Projects</a>
-                <a href="#experience" class="nav-link text-gray-700 hover:text-purple-600 font-medium">Experience</a>
-                <a href="#certifications" class="nav-link text-gray-700 hover:text-purple-600 font-medium">Certifications</a>
-                <a href="#github" class="nav-link text-gray-700 hover:text-purple-600 font-medium">GitHub Activity</a>
-                <a href="#contact" class="nav-link text-gray-700 hover:text-purple-600 font-medium">Contact</a>
-            </div>
-            <button id="mobile-menu-btn" class="md:hidden">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </div>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      <div class="flex-shrink-0 flex items-center">
+        <span class="font-bold text-xl text-slate-900 tracking-tight">Rupesh Sahu</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="text-slate-600 hover:text-blue-600 font-medium transition">About</a>
+        <a href="#experience" class="text-slate-600 hover:text-blue-600 font-medium transition">Experience</a>
+        <a href="#skills" class="text-slate-600 hover:text-blue-600 font-medium transition">Skills</a>
+        <a href="#contact" class="px-4 py-2 rounded-md bg-blue-600 text-white font-medium hover:bg-blue-700 transition">Contact Me</a>
+      </div>
     </div>
+  </div>
 </nav>
 
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40">
-    <div class="bg-white w-64 h-full p-6">
-        <button id="close-menu" class="mb-8">
-            <i class="fas fa-times text-2xl"></i>
-        </button>
-        <div class="flex flex-col space-y-4">
-            <a href="#home" class="text-gray-700 hover:text-purple-600 font-medium">Home</a>
-            <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">About</a>
-            <a href="#skills" class="text-gray-700 hover:text-purple-600 font-medium">Skills</a>
-            <a href="#projects" class="text-gray-700 hover:text-purple-600 font-medium">Projects</a>
-            <a href="#experience" class="text-gray-700 hover:text-purple-600 font-medium">Experience</a>
-            <a href="#certifications" class="text-gray-700 hover:text-purple-600 font-medium">Certifications</a>
-            <a href="#github" class="text-gray-700 hover:text-purple-600 font-medium">GitHub Activity</a>
-            <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium">Contact</a>
-        </div>
+<section class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="flex justify-center mb-8">
+      <img src="assets/images/profile.png" alt="Rupesh Sahu" class="w-40 h-40 rounded-full object-cover shadow-xl border-4 border-white">
     </div>
-</div>
-
-<!-- Hero Section -->
-<section id="home" class="gradient-bg text-white pt-32 pb-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-2/3 mb-8 md:mb-0">
-                <h1 class="text-5xl md:text-6xl font-bold mb-4">Rupesh Sahu</h1>
-                <h2 class="text-2xl md:text-3xl font-light mb-6">Senior Software Development Engineer in Test</h2>
-                <p class="text-lg mb-8 opacity-90">8 years of expertise in architecting scalable test automation solutions for enterprise-grade applications</p>
-                <div class="flex space-x-4">
-                    <a href="https://www.linkedin.com/in/rupeshsahu7509/" target="_blank" class="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-                        <i class="fab fa-linkedin mr-2"></i>LinkedIn
-                    </a>
-                    <a href="https://github.com/rupeshsahu" target="_blank" class="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
-                        <i class="fab fa-github mr-2"></i>GitHub
-                    </a>
-                    <a href="/cdn-cgi/l/email-protection#c1b3b4b1a4b2a9b2a0a9b4f6f4f1f881a6aca0a8adefa2aeac" class="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition">
-                        <i class="fas fa-envelope mr-2"></i>Contact
-                    </a>
-                </div>
-            </div>
-            <div class="md:w-1/3 flex justify-center">
-                <div class="w-64 h-64 rounded-full bg-white bg-opacity-10 flex items-center justify-center overflow-hidden border-4 border-white shadow-2xl">
-                    <!-- Replace 'path/to/your/profile-picture.jpg' with your actual image path -->
-                    <img src="assets/images/profile.png" alt="Rupesh Sahu" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <i class="fas fa-user text-9xl opacity-50" style="display:none;"></i>
-                </div>
-            </div>
-        </div>
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+      Senior SDET & <br class="hidden md:block" />
+      <span class="text-blue-600">Automation Architect</span>
+    </h1>
+    <p class="mt-4 text-xl text-slate-600 max-w-3xl mx-auto mb-10">
+      8+ years of experience designing hybrid frameworks, leading QA strategies, and integrating AI-driven automation into CI/CD pipelines.
+    </p>
+    <div class="flex justify-center gap-4">
+      <a href="#experience" class="rounded-full bg-slate-900 text-white px-8 py-3 font-semibold hover:bg-slate-700 transition shadow-lg">
+        View Experience
+      </a>
+      <a href="mailto:rupeshsahu7509@gmail.com" class="rounded-full bg-white text-slate-900 border border-slate-200 px-8 py-3 font-semibold hover:bg-slate-50 transition">
+        Get in Touch
+      </a>
     </div>
+  </div>
 </section>
 
-<!-- Stats Section -->
-<section class="py-12 -mt-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div class="stat-card text-white p-6 rounded-xl text-center card-hover">
-                <div class="text-4xl font-bold mb-2">8+</div>
-                <div class="text-sm opacity-90">Years Experience</div>
-            </div>
-            <div class="stat-card text-white p-6 rounded-xl text-center card-hover">
-                <div class="text-4xl font-bold mb-2">50+</div>
-                <div class="text-sm opacity-90">Projects Delivered</div>
-            </div>
-            <div class="stat-card text-white p-6 rounded-xl text-center card-hover">
-                <div class="text-4xl font-bold mb-2">10+</div>
-                <div class="text-sm opacity-90">Certifications</div>
-            </div>
-            <div class="stat-card text-white p-6 rounded-xl text-center card-hover">
-                <div class="text-4xl font-bold mb-2">5+</div>
-                <div class="text-sm opacity-90">Engineers Mentored</div>
-            </div>
-        </div>
+<section id="about" class="py-20 bg-slate-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center">Professional Summary</h2>
+    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 leading-relaxed text-lg text-slate-700">
+      <p class="mb-4">
+        I am a <strong>Senior SDET & Automation Lead</strong> with 8 years of experience architecting scalable test automation solutions for enterprise-grade cloud and on-premise applications. My expertise lies in designing hybrid frameworks from scratch using <strong>Java, Selenium, Playwright, and REST Assured</strong>.
+      </p>
+      <p>
+        I have a proven track record of leading QA strategies, mentoring teams, and bridging the gap between development and QA through robust <strong>DevOps implementations</strong> (Kubernetes, Docker, Jenkins). Recently, I have focused on integrating <strong>Generative AI</strong> (ChatGPT/Gemini) to revolutionize test data generation and log analysis.
+      </p>
     </div>
+  </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
-        <div class="bg-white rounded-xl shadow-lg p-8">
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                Senior SDET & Automation Lead with 8 years of experience architecting scalable test automation solutions for enterprise-grade cloud and on-premise applications. Expert in designing hybrid frameworks from scratch using Java, Selenium, Playwright(JS), and REST Assured.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                Proven track record of leading QA strategies, mentoring teams, and integrating intelligent automation (ChatGPT/Gemini) into CI/CD pipelines. Skilled in bridging the gap between development and QA through robust DevOps implementations (Kubernetes, Docker, Jenkins).
-            </p>
+<section id="experience" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Work Experience</h2>
+
+    <div class="relative border-l-4 border-blue-100 ml-4 md:ml-0 space-y-12">
+
+      <div class="relative pl-8 md:pl-12 group">
+        <div class="absolute -left-3 top-2 w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-sm"></div>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+          <h3 class="text-2xl font-bold text-slate-900">OpenText</h3>
+          <span class="text-blue-600 font-semibold bg-blue-50 px-3 py-1 rounded-full text-sm">Sept 2023 – Present</span>
         </div>
+        <p class="text-lg text-slate-600 font-medium mb-4">Senior SDET | Bengaluru</p>
+        <ul class="space-y-3 text-slate-700 list-disc ml-5">
+          <li><strong>Automation Strategy:</strong> Spearheaded backend automation roadmap for WCM application, ensuring 100% coverage across cloud/on-premise.</li>
+          <li><strong>Framework Architecture:</strong> Architected a modular Selenium & REST Assured framework with <strong>Self-Healing</strong> capabilities, reducing maintenance by 40%.</li>
+          <li><strong>Modern UI Strategy:</strong> Introduced <strong>Playwright</strong> for dynamic web apps, leveraging auto-waiting to reduce flakiness by 30%.</li>
+          <li><strong>Cost Optimization:</strong> Designed ephemeral test environments using <strong>AWS Spot Instances</strong> & Terraform, cutting infrastructure costs by 30%.</li>
+          <li><strong>AI-Driven Testing:</strong> Integrated ChatGPT/Gemini APIs to automate complex test data generation.</li>
+          <li><strong>DevOps:</strong> Orchestrated containerized tests using <strong>Kubernetes</strong> and designed "Quality Gates" in Jenkins pipelines.</li>
+        </ul>
+      </div>
+
+      <div class="relative pl-8 md:pl-12 group">
+        <div class="absolute -left-3 top-2 w-6 h-6 bg-slate-300 rounded-full border-4 border-white shadow-sm"></div>
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+          <h3 class="text-2xl font-bold text-slate-900">Informatica</h3>
+          <span class="text-slate-500 font-semibold bg-slate-100 px-3 py-1 rounded-full text-sm">Jan 2018 – Sept 2023</span>
+        </div>
+        <p class="text-lg text-slate-600 font-medium mb-4">SDET (Evolved into QA Lead Role) | Bengaluru</p>
+        <ul class="space-y-3 text-slate-700 list-disc ml-5">
+          <li><strong>Product Ownership:</strong> Served as QA Lead for the primary ETL tool, signing off on critical production releases.</li>
+          <li><strong>Tool Development:</strong> Engineered the "ABCT Automation Utility" (Java/Jenkins), saving <strong>20 engineer-hours per sprint</strong>.</li>
+          <li><strong>Mentorship:</strong> Led workshops for 5+ junior engineers, resulting in a 50% increase in automated coverage.</li>
+          <li><strong>Infrastructure:</strong> Managed Linux/Unix environments and scaled massive regression suites with intelligent test selection.</li>
+        </ul>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<!-- Skills Section -->
-<section id="skills" class="py-20 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12">Technical Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Automation Tools -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <h3 class="text-2xl font-bold mb-6 text-purple-600">
-                    <i class="fas fa-robot mr-2"></i>Automation & Testing
-                </h3>
-                <div class="space-y-4">
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Selenium</span>
-                            <span class="text-gray-600">Expert</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">REST Assured</span>
-                            <span class="text-gray-600">Expert</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Playwright</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">TestNG</span>
-                            <span class="text-gray-600">Expert</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Spring Boot</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section id="skills" class="py-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Technical Competencies</h2>
 
-            <!-- Programming Languages -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <h3 class="text-2xl font-bold mb-6 text-purple-600">
-                    <i class="fas fa-code mr-2"></i>Programming Languages
-                </h3>
-                <div class="space-y-4">
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Java</span>
-                            <span class="text-gray-600">Expert</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">JavaScript</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Python</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">SQL</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Shell Scripting</span>
-                            <span class="text-gray-600">Intermediate</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <!-- DevOps & Cloud -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <h3 class="text-2xl font-bold mb-6 text-purple-600">
-                    <i class="fas fa-cloud mr-2"></i>DevOps & Cloud
-                </h3>
-                <div class="space-y-4">
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Jenkins</span>
-                            <span class="text-gray-600">Expert</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Kubernetes</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Docker</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">AWS</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Terraform</span>
-                            <span class="text-gray-600">Intermediate</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tools & Technologies -->
-            <div class="bg-white rounded-xl shadow-lg p-8 card-hover">
-                <h3 class="text-2xl font-bold mb-6 text-purple-600">
-                    <i class="fas fa-tools mr-2"></i>Tools & Technologies
-                </h3>
-                <div class="space-y-4">
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Git</span>
-                            <span class="text-gray-600">Expert</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">JIRA</span>
-                            <span class="text-gray-600">Expert</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Maven</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Postman</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-semibold">Linux (RHEL)</span>
-                            <span class="text-gray-600">Advanced</span>
-                        </div>
-                        <div class="bg-gray-200 rounded-full h-3">
-                            <div class="skill-bar bg-gradient-to-r from-purple-500 to-indigo-500 h-3 rounded-full" style="width: 85%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+          <i class="fa-solid fa-robot"></i>
         </div>
-
-        <!-- Skills Chart -->
-        <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
-            <h3 class="text-2xl font-bold mb-6 text-center">Skills Distribution</h3>
-            <div class="max-w-2xl mx-auto">
-                <canvas id="skillsChart"></canvas>
-            </div>
+        <h3 class="font-bold text-lg mb-3">Automation</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Selenium</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Playwright</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">REST Assured</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Cucumber BDD</span>
         </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-3">Languages</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Java (Expert)</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Python</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">SQL</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Shell</span>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+          <i class="fa-solid fa-cloud"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-3">DevOps & Cloud</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Jenkins</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Kubernetes</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Docker</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">AWS</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Terraform</span>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-4 text-xl">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-3">Tools</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">JIRA</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Git</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Maven/Gradle</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-md">Postman</span>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project 1 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-2"></div>
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-cube text-3xl text-purple-600 mr-3"></i>
-                        <h3 class="text-xl font-bold">Hybrid Automation Framework</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Architected modular Selenium & REST Assured framework with self-healing capabilities, reducing maintenance time by 40%</p>
-                    <div class="mb-4">
-                        <span class="project-tag">Java</span>
-                        <span class="project-tag">Selenium</span>
-                        <span class="project-tag">REST Assured</span>
-                        <span class="project-tag">TestNG</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-calendar mr-1"></i>2023 - Present
-                            </span>
-                        <a href="#" class="text-purple-600 hover:text-purple-800 font-semibold">
-                            View Details <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-2"></div>
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-brain text-3xl text-purple-600 mr-3"></i>
-                        <h3 class="text-xl font-bold">AI-Driven Test Automation</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Integrated ChatGPT/Gemini APIs for intelligent test data generation and log analysis, reducing debugging time significantly</p>
-                    <div class="mb-4">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">ChatGPT API</span>
-                        <span class="project-tag">Gemini</span>
-                        <span class="project-tag">NLP</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-calendar mr-1"></i>2024
-                            </span>
-                        <a href="#" class="text-purple-600 hover:text-purple-800 font-semibold">
-                            View Details <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-2"></div>
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fab fa-docker text-3xl text-purple-600 mr-3"></i>
-                        <h3 class="text-xl font-bold">Kubernetes Test Orchestration</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Orchestrated containerized test environments using Kubernetes for on-demand execution and auto-scaling during peak load testing</p>
-                    <div class="mb-4">
-                        <span class="project-tag">Kubernetes</span>
-                        <span class="project-tag">Docker</span>
-                        <span class="project-tag">Jenkins</span>
-                        <span class="project-tag">AWS</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-calendar mr-1"></i>2023
-                            </span>
-                        <a href="#" class="text-purple-600 hover:text-purple-800 font-semibold">
-                            View Details <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-2"></div>
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-chart-line text-3xl text-purple-600 mr-3"></i>
-                        <h3 class="text-xl font-bold">Quality Governance Dashboard</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Engineered centralized release health dashboard integrating Jenkins and JIRA, reducing decision times by 50%</p>
-                    <div class="mb-4">
-                        <span class="project-tag">Jenkins</span>
-                        <span class="project-tag">JIRA</span>
-                        <span class="project-tag">REST API</span>
-                        <span class="project-tag">JavaScript</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-calendar mr-1"></i>2024
-                            </span>
-                        <a href="#" class="text-purple-600 hover:text-purple-800 font-semibold">
-                            View Details <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-2"></div>
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-dollar-sign text-3xl text-purple-600 mr-3"></i>
-                        <h3 class="text-xl font-bold">Infrastructure Cost Optimization</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Designed ephemeral test environment strategy using Terraform and AWS Spot Instances, reducing costs by 30%</p>
-                    <div class="mb-4">
-                        <span class="project-tag">Terraform</span>
-                        <span class="project-tag">AWS</span>
-                        <span class="project-tag">Cost Optimization</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-calendar mr-1"></i>2024
-                            </span>
-                        <a href="#" class="text-purple-600 hover:text-purple-800 font-semibold">
-                            View Details <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-                <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-2"></div>
-                <div class="p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-wrench text-3xl text-purple-600 mr-3"></i>
-                        <h3 class="text-xl font-bold">ABCT Automation Utility</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">Custom Java-based tool integrated with Jenkins that automated complex UI workflows, saving 20 hours per sprint</p>
-                    <div class="mb-4">
-                        <span class="project-tag">Java</span>
-                        <span class="project-tag">SWTBot</span>
-                        <span class="project-tag">Jenkins</span>
-                    </div>
-                    <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-calendar mr-1"></i>2019 - 2023
-                            </span>
-                        <a href="#" class="text-purple-600 hover:text-purple-800 font-semibold">
-                            View Details <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section id="contact" class="bg-slate-900 text-white py-16">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
+    <p class="text-slate-400 mb-8 text-lg">
+      I am currently based in Bengaluru and open to discussing Senior SDET, Lead, or Architect roles.
+    </p>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+      <a href="mailto:rupeshsahu7509@gmail.com" class="flex items-center gap-2 text-white hover:text-blue-400 transition text-lg">
+        <i class="fa-solid fa-envelope"></i> rupeshsahu7509@gmail.com
+      </a>
+      <a href="tel:+917509769044" class="flex items-center gap-2 text-white hover:text-blue-400 transition text-lg">
+        <i class="fa-solid fa-phone"></i> +91-7509769044
+      </a>
     </div>
+
+    <div class="mt-12 flex justify-center gap-6">
+      <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <div class="mt-12 border-t border-slate-800 pt-8 text-slate-500 text-sm">
+      &copy; 2024 Rupesh Sahu. All rights reserved.
+    </div>
+  </div>
 </section>
 
-<!-- Experience Section -->
-<section id="experience" class="py-20 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12">Work Experience</h2>
-        <div class="max-w-4xl mx-auto">
-            <!-- OpenText -->
-            <div class="relative pl-8 pb-12 border-l-2 border-purple-600">
-                <div class="timeline-item relative">
-                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
-                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                            <div>
-                                <h3 class="text-2xl font-bold text-purple-600">Senior SDET</h3>
-                                <p class="text-gray-600 font-semibold">OpenText</p>
-                            </div>
-                            <div class="text-gray-500">
-                                <i class="fas fa-calendar mr-2"></i>Sept 2023 - Present
-                            </div>
-                        </div>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Spearheaded backend automation roadmap for WCM application with 100% test coverage</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Architected modular Selenium & REST Assured framework with self-healing capabilities</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Orchestrated containerized test environments using Kubernetes for auto-scaling</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Integrated AI (ChatGPT/Gemini) for automated test data generation and log analysis</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Reduced cloud infrastructure costs by 30% using Terraform and AWS Spot Instances</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Reduced UI test flakiness by 30% using Playwright's auto-waiting capabilities</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Informatica -->
-            <div class="relative pl-8">
-                <div class="timeline-item relative">
-                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
-                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                            <div>
-                                <h3 class="text-2xl font-bold text-purple-600">SDET (QA Lead)</h3>
-                                <p class="text-gray-600 font-semibold">Informatica</p>
-                            </div>
-                            <div class="text-gray-500">
-                                <i class="fas fa-calendar mr-2"></i>Jan 2018 - Sept 2023
-                            </div>
-                        </div>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Led rollout of internal automation framework, increasing test coverage by 50%</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Mentored 5+ junior engineers through workshops and code reviews</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Served as QA Lead for primary ETL tool, owning end-to-end release quality</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Engineered ABCT Automation Utility, saving 20 engineer-hours per sprint</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                                <span>Managed Linux/Unix test environments and Tomcat server troubleshooting</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Certifications Section -->
-<section id="certifications" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12">Certifications & Licenses</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <a href="https://coursera.org/share/0a64f06d00c48aeb9b3e41894fd5701b" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">Test Automation Framework</h4>
-                        <p class="text-sm text-gray-600">Coursera</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">Building Test Automation Framework using Selenium and TestNG</p>
-            </a>
-
-            <a href="https://www.linkedin.com/learning/certificates/d674024c2f4d6c7cab4916ad6f8597a783321e6b844a6d6c28ec87bdba11e3d4" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">Learning Jenkins</h4>
-                        <p class="text-sm text-gray-600">LinkedIn Learning</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">CI/CD pipeline automation and orchestration</p>
-            </a>
-
-            <a href="https://www.linkedin.com/learning/certificates/8b0c79b5c80946a2264e9fdf72f03349fc3d6d7dbfad826a20f908e774dff3b7" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">Software Testing Foundations</h4>
-                        <p class="text-sm text-gray-600">LinkedIn Learning</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">Core software testing principles and methodologies</p>
-            </a>
-
-            <a href="https://www.linkedin.com/learning/certificates/d0601af203236d3ec40467974e3e9b17c97308c7b814bac3551fb7fdbf675daa" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">Java: Testing with JUnit</h4>
-                        <p class="text-sm text-gray-600">LinkedIn Learning</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">Unit testing best practices in Java</p>
-            </a>
-
-            <a href="https://www.linkedin.com/learning/certificates/ced8f2dc4ed3085d5ec167874d3d43c3f6cb32be5c8deadc297f0ac3a6d66b53" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">Selenium Essential Training</h4>
-                        <p class="text-sm text-gray-600">LinkedIn Learning</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">Web automation with Selenium WebDriver</p>
-            </a>
-
-            <a href="https://www.linkedin.com/learning/certificates/acc92b3637a382e5e0aebc6cc9289adaef0c82d2409999578c33ad071b7a0d99" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">API Testing with REST Assured</h4>
-                        <p class="text-sm text-gray-600">LinkedIn Learning</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">RESTful API testing and validation</p>
-            </a>
-
-            <a href="https://www.linkedin.com/learning/certificates/2f6d796574f61f34066fbc788a426ccf07ac4dea94935682cf62606418130982" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">Learning Hadoop</h4>
-                        <p class="text-sm text-gray-600">LinkedIn Learning</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">Big data processing fundamentals</p>
-            </a>
-
-            <a href="https://www.linkedin.com/learning/certificates/4b25b3081df74f993ec7b072406534f8b0d7b105e8e0e92c52540f203ab7179d" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">Data Structures</h4>
-                        <p class="text-sm text-gray-600">LinkedIn Learning</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">Core data structures and algorithms</p>
-            </a>
-
-            <a href="https://coursera.org/share/dc7f8fc0e09b8328f10ae58c390d6427" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">Create First Automation Script</h4>
-                        <p class="text-sm text-gray-600">Coursera</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">Creating your first test automation script</p>
-            </a>
-
-            <a href="https://www.linkedin.com/learning/certificates/e92b1ca9fa6f7f9310c0032361100765f36ef611eeb920083da791daf07d8527" target="_blank" class="cert-badge bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-600 block">
-                <div class="flex items-center mb-3">
-                    <i class="fas fa-certificate text-3xl text-purple-600 mr-3"></i>
-                    <div class="flex-1">
-                        <h4 class="font-bold text-lg">Managing Your Time</h4>
-                        <p class="text-sm text-gray-600">LinkedIn Learning</p>
-                    </div>
-                    <i class="fas fa-external-link-alt text-purple-600"></i>
-                </div>
-                <p class="text-gray-700">Time management and productivity</p>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- GitHub Activity Section -->
-<section id="github" class="py-20 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12">GitHub Activity</h2>
-
-        <!-- GitHub Stats -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover">
-                <i class="fab fa-github text-5xl text-purple-600 mb-4"></i>
-                <div class="text-3xl font-bold mb-2" id="total-repos">Loading...</div>
-                <div class="text-gray-600">Public Repositories</div>
-            </div>
-            <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover">
-                <i class="fas fa-code-branch text-5xl text-purple-600 mb-4"></i>
-                <div class="text-3xl font-bold mb-2" id="total-commits">Loading...</div>
-                <div class="text-gray-600">Total Contributions</div>
-            </div>
-            <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover">
-                <i class="fas fa-star text-5xl text-purple-600 mb-4"></i>
-                <div class="text-3xl font-bold mb-2" id="total-stars">Loading...</div>
-                <div class="text-gray-600">Stars Received</div>
-            </div>
-        </div>
-
-        <!-- Contribution Graph -->
-        <div class="bg-white rounded-xl shadow-lg p-8">
-            <h3 class="text-2xl font-bold mb-6 text-center">Contribution Activity</h3>
-            <div class="overflow-x-auto">
-                <div id="contribution-graph" class="github-activity mx-auto" style="max-width: 800px;">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </div>
-            <div class="flex items-center justify-center mt-4 space-x-4 text-sm text-gray-600">
-                <span>Less</span>
-                <div class="flex space-x-1">
-                    <div class="activity-cell"></div>
-                    <div class="activity-cell level-1"></div>
-                    <div class="activity-cell level-2"></div>
-                    <div class="activity-cell level-3"></div>
-                    <div class="activity-cell level-4"></div>
-                </div>
-                <span>More</span>
-            </div>
-        </div>
-
-        <!-- Recent Repositories -->
-        <div class="mt-12">
-            <h3 class="text-2xl font-bold text-center mb-6">Recent Repositories</h3>
-            <div id="recent-repos" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Will be populated by JavaScript -->
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-center mb-12">Get In Touch</h2>
-        <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-phone text-purple-600 text-xl mr-4"></i>
-                            <div>
-                                <p class="font-semibold">Phone</p>
-                                <a href="tel:+917509769044" class="text-gray-600 hover:text-purple-600">+91-7509769044</a>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fab fa-whatsapp text-purple-600 text-xl mr-4"></i>
-                            <div>
-                                <p class="font-semibold">WhatsApp</p>
-                                <a href="https://wa.me/917509769044" target="_blank" class="text-gray-600 hover:text-purple-600">+91-7509769044</a>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-envelope text-purple-600 text-xl mr-4"></i>
-                            <div>
-                                <p class="font-semibold">Email</p>
-                                <a href="/cdn-cgi/l/email-protection#83f1f6f3e6f0ebf0e2ebf6b4b6b3bac3e4eee2eaefade0ecee" class="text-gray-600 hover:text-purple-600"><span class="__cf_email__" data-cfemail="f381868396809b80929b86c4c6c3cab3949e929a9fdd909c9e">[email&#160;protected]</span></a>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fab fa-linkedin text-purple-600 text-xl mr-4"></i>
-                            <div>
-                                <p class="font-semibold">LinkedIn</p>
-                                <a href="https://www.linkedin.com/in/rupeshsahu7509/" target="_blank" class="text-gray-600 hover:text-purple-600">linkedin.com/in/rupeshsahu7509</a>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fab fa-github text-purple-600 text-xl mr-4"></i>
-                            <div>
-                                <p class="font-semibold">GitHub</p>
-                                <a href="https://github.com/rupeshsahu" target="_blank" class="text-gray-600 hover:text-purple-600">github.com/rupeshsahu</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold mb-6">Quick Links</h3>
-                    <div class="space-y-3">
-                        <a href="https://rupeshsahu.github.io/" target="_blank" class="block bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-lg font-semibold text-center hover:from-purple-700 hover:to-indigo-700 transition">
-                            <i class="fas fa-globe mr-2"></i>Visit Portfolio Website
-                        </a>
-                        <a href="https://www.linkedin.com/in/rupeshsahu7509/" target="_blank" class="block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-blue-700 transition">
-                            <i class="fab fa-linkedin mr-2"></i>Connect on LinkedIn
-                        </a>
-                        <a href="https://github.com/rupeshsahu" target="_blank" class="block bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-gray-900 transition">
-                            <i class="fab fa-github mr-2"></i>View GitHub Profile
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="gradient-bg text-white py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <p class="text-lg mb-4">&copy; 2025 Rupesh Sahu. All rights reserved.</p>
-        <div class="flex justify-center space-x-6">
-            <a href="https://www.linkedin.com/in/rupeshsahu7509/" target="_blank" class="hover:text-gray-300 transition">
-                <i class="fab fa-linkedin text-2xl"></i>
-            </a>
-            <a href="https://github.com/rupeshsahu" target="_blank" class="hover:text-gray-300 transition">
-                <i class="fab fa-github text-2xl"></i>
-            </a>
-            <a href="/cdn-cgi/l/email-protection#4b393e3b2e3823382a233e7c7e7b720b2c262a222765282426" class="hover:text-gray-300 transition">
-                <i class="fas fa-envelope text-2xl"></i>
-            </a>
-            <a href="https://wa.me/917509769044" target="_blank" class="hover:text-gray-300 transition">
-                <i class="fab fa-whatsapp text-2xl"></i>
-            </a>
-        </div>
-    </div>
-</footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // Mobile Menu Toggle
-    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-        document.getElementById('mobile-menu').classList.remove('hidden');
-    });
-
-    document.getElementById('close-menu').addEventListener('click', () => {
-        document.getElementById('mobile-menu').classList.add('hidden');
-    });
-
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            document.getElementById('mobile-menu').classList.add('hidden');
-        });
-    });
-
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-
-    // Active navigation link highlight
-    window.addEventListener('scroll', () => {
-        let current = '';
-        const sections = document.querySelectorAll('section');
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
-        });
-
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
-    });
-
-    // Skills Chart
-    const ctx = document.getElementById('skillsChart').getContext('2d');
-    new Chart(ctx, {
-        type: 'radar',
-        data: {
-            labels: ['Automation', 'Programming', 'DevOps', 'Cloud', 'Tools', 'Leadership'],
-            datasets: [{
-                label: 'Skill Level',
-                data: [95, 90, 85, 80, 90, 88],
-                backgroundColor: 'rgba(102, 126, 234, 0.2)',
-                borderColor: 'rgba(102, 126, 234, 1)',
-                borderWidth: 2,
-                pointBackgroundColor: 'rgba(102, 126, 234, 1)',
-                pointBorderColor: '#fff',
-                pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: 'rgba(102, 126, 234, 1)'
-            }]
-        },
-        options: {
-            scales: {
-                r: {
-                    beginAtZero: true,
-                    max: 100,
-                    ticks: {
-                        stepSize: 20
-                    }
-                }
-            },
-            plugins: {
-                legend: {
-                    display: false
-                }
-            }
-        }
-    });
-
-    // GitHub Activity Simulation (Replace with actual GitHub API calls)
-    function generateGitHubActivity() {
-        const graph = document.getElementById('contribution-graph');
-        const weeks = 53;
-        const daysPerWeek = 7;
-
-        for (let week = 0; week < weeks; week++) {
-            for (let day = 0; day < daysPerWeek; day++) {
-                const cell = document.createElement('div');
-                cell.className = 'activity-cell';
-
-                // Random activity level (0-4)
-                const level = Math.floor(Math.random() * 5);
-                if (level > 0) {
-                    cell.classList.add(`level-${level}`);
-                }
-
-                graph.appendChild(cell);
-            }
-        }
-    }
-
-    // Fetch GitHub Stats (This is a simulation - replace with actual API calls)
-    async function fetchGitHubStats() {
-        // Simulated data - In production, replace with actual GitHub API calls
-        document.getElementById('total-repos').textContent = '25+';
-        document.getElementById('total-commits').textContent = '1,500+';
-        document.getElementById('total-stars').textContent = '150+';
-
-        // Simulated recent repos
-        const repos = [
-            {
-                name: 'automation-framework',
-                description: 'Hybrid test automation framework with Selenium and REST Assured',
-                language: 'Java',
-                stars: 45,
-                forks: 12
-            },
-            {
-                name: 'ai-test-generator',
-                description: 'AI-powered test data generation using ChatGPT API',
-                language: 'Python',
-                stars: 32,
-                forks: 8
-            },
-            {
-                name: 'k8s-test-orchestrator',
-                description: 'Kubernetes-based test environment orchestration',
-                language: 'JavaScript',
-                stars: 28,
-                forks: 6
-            },
-            {
-                name: 'quality-dashboard',
-                description: 'Real-time quality metrics dashboard',
-                language: 'JavaScript',
-                stars: 18,
-                forks: 4
-            }
-        ];
-
-        const reposContainer = document.getElementById('recent-repos');
-        repos.forEach(repo => {
-            const repoCard = `
-                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover">
-                        <h4 class="text-xl font-bold mb-2 text-purple-600">
-                            <i class="fab fa-github mr-2"></i>${repo.name}
-                        </h4>
-                        <p class="text-gray-600 mb-4">${repo.description}</p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">
-                                <i class="fas fa-circle text-xs mr-1" style="color: #f1e05a;"></i>${repo.language}
-                            </span>
-                            <div class="flex space-x-4 text-sm text-gray-500">
-                                <span><i class="fas fa-star mr-1"></i>${repo.stars}</span>
-                                <span><i class="fas fa-code-branch mr-1"></i>${repo.forks}</span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            reposContainer.innerHTML += repoCard;
-        });
-    }
-
-    // Initialize
-    generateGitHubActivity();
-    fetchGitHubStats();
-
-    // Animate skill bars on scroll
-    const observerOptions = {
-        threshold: 0.5
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.querySelectorAll(
+</body>
+</html>
